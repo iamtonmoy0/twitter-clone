@@ -7,6 +7,11 @@ ruby "2.7.4"
 gem 'bulma-rails', '~> 0.9.4'
 #simple form
 gem 'simple_form', '~> 5.1'
+#gravatar image
+gem 'gravatar_image_tag', '~> 1.2'
+
+#devise
+gem 'devise', '~> 4.8', '>= 4.8.1'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.1"
 
