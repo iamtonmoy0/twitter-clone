@@ -76,6 +76,8 @@ GEM
     bootsnap (1.15.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    bulma-rails (0.9.4)
+      sassc (~> 2.0)
     capybara (3.38.0)
       addressable
       matrix
@@ -209,11 +211,16 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.7.1)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     shellany (0.0.1)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -255,6 +262,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors (~> 2.9, >= 2.9.1)
   bootsnap
+  bulma-rails (~> 0.9.4)
   capybara
   debug
   guard (~> 2.18)
@@ -265,6 +273,7 @@ DEPENDENCIES
   rails (~> 7.0.4, >= 7.0.4.1)
   redis (~> 4.0)
   selenium-webdriver
+  simple_form (~> 5.1)
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
