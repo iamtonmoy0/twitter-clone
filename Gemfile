@@ -62,6 +62,12 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  #Provides a better error page for Rails and other Rack apps. Includes source code inspection, a live REPL and local/instance variable inspection for all stack frames.
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  #guard
+  gem 'guard', '~> 2.18'
+  #livereload
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2',require: false
 end
 
 group :test do
