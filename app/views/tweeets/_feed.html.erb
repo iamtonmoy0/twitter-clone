@@ -10,10 +10,21 @@
 		</div>
 	</article>
 </div>
- <% tweeets.each do |tweeet| %>
+ <% @tweeets.each do | tweeet | %>
 <div class="box">
 <article class="media">
-
+<figure class="media-left">
+			<p class="image is-64x64">
+				<img src="htps://bulma.io/images/placeholers/64x64/png" >
+			</p>
+		</figure>
+		<div class="media-content">
+			<div class="content">
+			<strong>Tonmoy </strong><br/>
+			<small>Developer</small><br/>
+			<p> <%= tweeet.tweeet %> </p>
+			</div>
+		</div>
 
 </article>
 </div>
