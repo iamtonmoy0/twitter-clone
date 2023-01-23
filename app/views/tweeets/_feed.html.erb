@@ -1,23 +1,18 @@
 <div class="column is-half">
-  <% if user_signed_in? %>
-	<article class="media box">
+ 	<article class="media box">
 		<figure class="media-left">
 			<p class="image is-64x64">
-				<%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name) %>
+				<img src="htps://bulma.io/images/placeholers/64x64/png" >
 			</p>
 		</figure>
 		<div class="media-content">
 			 <%= render 'tweeets/form' %>
 		</div>
 	</article>
-  <% end %>
-<div id="tweeets">
-  <% @tweeets.each do |tweeet| %>
-    <%= render tweeet %>
-    <p>
-      <%= link_to "Show this tweeet", tweeet %>
-    </p>
-  <% end %>
 </div>
+ <% tweeets.each do |tweeet| %>
+ 
 
-<%= link_to "New tweeet", new_tweeet_path %>
+
+ <% end %>
+
