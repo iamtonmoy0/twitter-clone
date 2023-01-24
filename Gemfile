@@ -3,15 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.4"
 
-#bulma
-gem 'bulma-rails', '~> 0.9.4'
-#simple form
-gem 'simple_form', '~> 5.1'
-#gravatar image
-gem 'gravatar_image_tag', '~> 1.2'
-
-#devise
-gem 'devise', '~> 4.8', '>= 4.8.1'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.1"
 
@@ -24,8 +15,8 @@ gem "sqlite3", "~> 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
-# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+# Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
+gem "jsbundling-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
@@ -37,7 +28,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-gem "redis", "~> 4.0"
+# gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -71,12 +62,6 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  #Provides a better error page for Rails and other Rack apps. Includes source code inspection, a live REPL and local/instance variable inspection for all stack frames.
-  gem 'better_errors', '~> 2.9', '>= 2.9.1'
-  #guard
-  gem 'guard', '~> 2.18'
-  #livereload
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2',require: false
 end
 
 group :test do
@@ -84,7 +69,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-end
-group :production do
-gem 'pg'
 end
